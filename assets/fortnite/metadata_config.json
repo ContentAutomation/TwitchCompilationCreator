@@ -1,0 +1,30 @@
+{
+  "top_line": "[Fortnite] Twitch Highlights #1 | Fails, Satisfying/Funny Moments & Epic Wins!",
+  "channel": "https://www.youtube.com/channel/UCouZhOvMyj_AamEDG0tPB5w",
+  "format_name": "Weekly Fortnite Highlights",
+  "channel_name": "Hourly Fortnite Cliips",
+  "game": "Fortnite",
+  "email": "Fortnite_Cliips@web.de",
+  "social_media": [
+    {
+      "platform": "Instagram",
+      "link": "https://www.instagram.com/hourly_fortnite_cliips/"
+    }
+  ],
+  "recommended_videos": [
+    {
+      "title": "Previous Episode",
+      "link": "https://www.youtube.com/watch?v=dO7AgIdzeVs&list=PLrh0OQQx8q3tQyQfP-5-cbEmTv90gkt9l"
+    }
+  ],
+  "featured_playlists": [
+    {
+      "title": "Fortnite Weekly Highlights",
+      "link": "https://www.youtube.com/playlist?list=PLrh0OQQx8q3tQyQfP-5-cbEmTv90gkt9l"
+    }
+  ],
+  "keywords": [
+    "fortnitebattleroyale",
+    "season4"
+  ]
+}

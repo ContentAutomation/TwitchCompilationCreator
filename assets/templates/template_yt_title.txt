@@ -1,0 +1,1 @@
+{{config.format_name}} | {{config.game}} | #{{episode_number}}

@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "twitch-clip-compilation-creator"
+version = "0.1.0"
+description = ""
+authors = ["Luca Schilling <lucaschilling96@web.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.5"
+requests = "^2.25.1"
+streamlink = "^2.0.0"
+tensorflow = "^2.4.1"
+moviepy = "^1.0.3"
+Jinja2 = "^2.11.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"

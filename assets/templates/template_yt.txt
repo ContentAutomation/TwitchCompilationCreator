@@ -1,0 +1,66 @@
+{{config.top_line}}
+
+🔔 SUBSCRIBE FOR MORE {{game_uc}} FAILS/WINS!
+{{config.channel}}?sub_confirmation=1
+
+Welcome back to episode {{episode_number}} of {{config.format_name}} | {{config.game}}!
+We have some insane clips this episode.
+If you liked and enjoyed the video be sure to leave a like and subscribe for more {{config.game}} content!
+{% if config.schedule -%}
+{% if config.upload_day -%}
+We upload a {{config.game}} video every {{config.upload_day}} once a {{config.schedule}}.
+{% endif %}
+{% endif %}
+Also be sure to comment letting us know which your favorite clip was 😄
+{% if config.social_media -%}
+
+{% if config.email -%}
+▶️ How to send YOUR Fails/Funny Moments!
+Upload your video to Youtube, Twitch, or Twitter
+Send the link of your clip to this email:
+{{config.email}}
+
+We will then watch the clip you've sent and if we like it, it may be featured in a future video!
+{% endif %}
+
+▶️Follow us on other platforms for more videos!
+{% for platform in config.social_media %}
+• {{ platform.platform }}: {{ platform.link }}
+{% endfor %}
+{% endif %}
+{% if config.recommended_videos -%}
+
+▶️Check out more of our videos!
+{% for video in config.recommended_videos -%}
+• {{ video.title }}: {{ video.link }}
+{% endfor %}
+{% endif %}
+{% if config.featured_playlists %}
+
+▶️Featured Playlists:
+{% for playlist in config.featured_playlists -%}
+• {{playlist.title}}: {{playlist.link}}
+{% endfor %}
+{% endif %}
+
+🎬Featured clips/streamers:
+{% for clip in clips -%}
+     {{ clip.broadcaster_name }}: {{clip.url}}
+{% endfor %}
+
+{% for clip in clips -%}
+     {{ clip.start_time }} {{clip.broadcaster_name}}
+{% endfor %}
+
+{{config.channel_name}} does not have the copyrights for the used clips.
+{% if config.email -%}
+If you are within a video and would like to get it removed please email us:
+{{config.email}}
+{% endif %}
+
+#{{channel_name_stripped}} #{{config.game}} #Fails #FunnyMoments #EpicMoments #Wins #EpicWins
+{% if config.keywords -%}
+{% for keyword in config.keywords %}
+#{{keyword }}{{' '}}
+{%- endfor %}
+{% endif %}
