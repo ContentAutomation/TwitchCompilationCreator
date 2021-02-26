@@ -1,4 +1,4 @@
-from src.utils import get_headers
+import src.utils as utils
 
 import config
 import requests
@@ -25,7 +25,7 @@ class APIHandler:
         url = "https://id.twitch.tv/oauth2/token"
         payload = {"client_id": config.CLIENT_ID, "client_secret": config.CLIENT_SECRET,
                    "grant_type": "client_credentials"}
-        resp = requests.post(url, param=payload, headers={"Client-ID": config.CLIENT_ID})
+        resp = requests.post(url, params=payload, headers={"Client-ID": config.CLIENT_ID})
         if resp.status_code == 200:
             with open("token", "w") as outfile:
                 outfile.write(resp.json()["access_token"])
@@ -37,7 +37,7 @@ class APIHandler:
     def get_twitch_game_id(name: str) -> int:
         url = f"https://api.twitch.tv/helix/games"
         payload = {"name": name}
-        resp = requests.get(url, params=payload, headers=get_headers())
+        resp = requests.get(url, params=payload, headers=utils.get_headers())
         if resp.status_code == 200:
             return resp.json()["data"][0]["id"]
         else:
