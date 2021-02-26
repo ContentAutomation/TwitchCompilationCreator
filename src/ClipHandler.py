@@ -87,9 +87,9 @@ class ClipHandler:
         number_of_clips = filter_information.get("number_of_clips", None)
         min_length = filter_information.get("min_length", None)
         if number_of_clips:
-            return len(self.clips) > number_of_clips
+            return len(self.clips) >= number_of_clips
         elif min_length:
-            return self.current_length > min_length
+            return self.current_length >= min_length
         else:
             logging.warning("number_of_clips/min_length parameter are both not initialized -> is_required_length==True")
             return False
@@ -137,6 +137,7 @@ class ClipHandler:
             else:
                 logging.info("Clip is not ingame -> remove clip")
                 if os.path.isfile(clip_path):
+                    video_clip.close()
                     os.remove(clip_path)
 
     def download_clip(self, clip: dict):
