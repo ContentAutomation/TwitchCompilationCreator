@@ -107,6 +107,8 @@ CLIENT_SECRET = "owdgx64t1dodleiuo49e5rg7rvk5iq"
 # For the YoutTube API
 API_KEY = "h5UYdzJHeZNWLTgGteh0J68k7icp9jp9vPJlbzF"
 ```
+7. Run ```poetry run python main.py``` to run the program. Alternatively you can run ```poetry shell``` followed by ```python main.py```
+8. Enjoy :)
 
 ## Script Explanations
 
