@@ -1,26 +1,29 @@
 {
   "top_line": "[Fortnite] Twitch Highlights #1 | Fails, Satisfying/Funny Moments & Epic Wins!",
-  "channel": "https://www.youtube.com/channel/UCouZhOvMyj_AamEDG0tPB5w",
+  "channel": "https://www.youtube.com/channel/YourChannelID",
   "format_name": "Weekly Fortnite Highlights",
-  "channel_name": "Hourly Fortnite Cliips",
+  "playlist_id": "YourPlaylistID",
+  "channel_name": "Your channel name",
   "game": "Fortnite",
-  "email": "Fortnite_Cliips@web.de",
+  "email": "youremail@web.de",
+  "schedule": "week",
+  "upload_day": "monday",
   "social_media": [
     {
       "platform": "Instagram",
-      "link": "https://www.instagram.com/hourly_fortnite_cliips/"
+      "link": "https://www.instagram.com/YourInstagramChannel"
     }
   ],
   "recommended_videos": [
     {
       "title": "Previous Episode",
-      "link": "https://www.youtube.com/watch?v=dO7AgIdzeVs&list=PLrh0OQQx8q3tQyQfP-5-cbEmTv90gkt9l"
+      "link": "https://www.youtube.com/watch?AnyOwnVideoID"
     }
   ],
   "featured_playlists": [
     {
       "title": "Fortnite Weekly Highlights",
-      "link": "https://www.youtube.com/playlist?list=PLrh0OQQx8q3tQyQfP-5-cbEmTv90gkt9l"
+      "link": "https://www.youtube.com/playlist?YourPlaylistID"
     }
   ],
   "keywords": [

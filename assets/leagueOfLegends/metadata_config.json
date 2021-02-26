@@ -2,9 +2,12 @@
   "top_line": "[League of Legends] Twitch Highlights #1 | Fails, Satisfying/Funny Moments & Epic Wins!",
   "channel": "",
   "format_name": "Weekly League of Legends Highlights",
+  "playlist_id": "YourPlaylistID",
   "channel_name": "",
   "game": "League of Legends",
-  "email": "highlightsforgaming@gmail.com",
+  "email": "youremail@web.de",
+  "schedule": "week",
+  "upload_day": "monday",
   "social_media": [
   ],
   "recommended_videos": [
