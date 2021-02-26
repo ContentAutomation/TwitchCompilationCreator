@@ -48,8 +48,10 @@ If you are interested in that feel free to message us via github.
 - [Run Parameters](#run-parameters)
 
 ## Results
-![Example Screenshot](https://github.com/ContentAutomation/Twitch-Clip-Compilation-Creator/blob/READMEImages/assets/READMEImages/example-screenshot.png)
-![Example Thumbnail](https://github.com/ContentAutomation/Twitch-Clip-Compilation-Creator/blob/READMEImages/assets/READMEImages/example-thumbnail.jpg)
+Example Video Screenshot            |  Example Thumbnail
+:----------------------------------:|:-------------------------:
+![](https://github.com/ContentAutomation/Twitch-Clip-Compilation-Creator/blob/READMEImages/assets/READMEImages/example-screenshot.png)            |  ![](https://github.com/ContentAutomation/Twitch-Clip-Compilation-Creator/blob/READMEImages/assets/READMEImages/example-thumbnail.jpg)
+
 ### Example Description
 ```html
 [Fortnite] Twitch Highlights #10 | Fails, Satisfying/Funny Moments & Epic Wins!
@@ -164,32 +166,32 @@ There are functions for the following in there:
 All of these parameters are optional and a default value will be used if not they are not defined. 
 You can also get these definitions by running ```main.py --help```
 
-#####-h, --help
+##### -h, --help
 show this help message and exit
 
-#####-g GAME, --game GAME  
+##### -g GAME, --game GAME  
 declares for which game the compilation should be created it uses fortnite as default
 
-#####-ap ASSET_PATH, --asset_path ASSET_PATH
+##### -ap ASSET_PATH, --asset_path ASSET_PATH
 assets path if not declared it uses assets as default
   
-#####-noc NUMBER_OF_CLIPS, --number_of_clips NUMBER_OF_CLIPS
+##### -noc NUMBER_OF_CLIPS, --number_of_clips NUMBER_OF_CLIPS
 how many clips should be used but its better to use min_length instead
  
-#####-ts {day,week,month}, --timespan {day,week,month}
+##### -ts {day,week,month}, --timespan {day,week,month}
 ['hour', 'day', 'week', 'month'] - timespan from when the clips should be taken. Default is week
   
-#####-la LANGUAGE, --language LANGUAGE
+##### -la LANGUAGE, --language LANGUAGE
 language of the clips. Default is en
   
-#####-ml MIN_LENGTH, --min_length MIN_LENGTH
+##### -ml MIN_LENGTH, --min_length MIN_LENGTH
 length of the compilation. Default is 360 which are 6 minutes
   
-#####-mcc MAX_CREATOR_CLIPS, --max_creator_clips MAX_CREATOR_CLIPS
+##### -mcc MAX_CREATOR_CLIPS, --max_creator_clips MAX_CREATOR_CLIPS
 amount of clips used from a single creator. Default is 2
   
-#####-mcd MIN_CLIP_DURATION, --min_clip_duration MIN_CLIP_DURATION
+##### -mcd MIN_CLIP_DURATION, --min_clip_duration MIN_CLIP_DURATION
 miminal amount of seconds a clip should have. Default is 10
   
-#####-o OUTPUT_PATH, --output_path OUTPUT_PATH
+##### -o OUTPUT_PATH, --output_path OUTPUT_PATH
 output path - default is TwitchClips. This should not start with a / otherwise it will use it as absolute path
