@@ -1,11 +1,12 @@
-from src import utils
-from src.MetadataHandler import MetadataHandler
-import config
+import logging
+import os
 
 from moviepy.editor import VideoFileClip, concatenate_videoclips, ImageClip, CompositeVideoClip, TextClip, afx
 from moviepy.tools import subprocess_call
-import logging
-import os
+
+import config
+from src import utils
+from src.MetadataHandler import MetadataHandler
 
 
 class ClipCompilationCreator:

@@ -1,8 +1,9 @@
-import src.utils as utils
+import logging
+
+import requests
 
 import config
-import requests
-import logging
+import src.utils as utils
 
 
 class APIHandler:
@@ -12,12 +13,13 @@ class APIHandler:
         url = (
             f"https://www.googleapis.com/youtube/v3/playlistItems"
         )
-        payload = {"part": id, "playlistId": playlist_id, "key": config.API_KEY}
+        payload = {"part": "id", "playlistId": playlist_id, "key": config.API_KEY}
         resp = requests.get(url, params=payload, headers={})
         if resp.status_code == 200:
             return resp.json()["pageInfo"]["totalResults"]
         else:
             logging.warning(f"Status Code: {resp.status_code}, {resp.json()}")
+            logging.warning(f"Check if you inserted a correct PlayListID in your metadata_config -> default return is 1")
 
     @staticmethod
     def get_new_twitch_token() -> str:

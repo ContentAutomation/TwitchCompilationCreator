@@ -1,16 +1,17 @@
-from src import utils
-from src.APIHandler import APIHandler
-from src import Clip
-import config
+import logging
+import os
+import random
+from datetime import time, timedelta
 
 from jinja2 import Environment, FileSystemLoader
-from datetime import time, timedelta
 from moviepy.editor import ImageClip, CompositeVideoClip, VideoFileClip, TextClip
 from moviepy.video.fx.resize import resize
 from moviepy.video.fx.rotate import rotate
-import os
-import random
-import logging
+
+import config
+from src import Clip
+from src import utils
+from src.APIHandler import APIHandler
 
 
 class MetadataHandler:

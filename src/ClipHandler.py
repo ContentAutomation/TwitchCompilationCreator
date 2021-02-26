@@ -1,17 +1,18 @@
-from src import utils
-from src.Clip import Clip
-from src.MetadataHandler import MetadataHandler
-from src.APIHandler import APIHandler
-import config
-
+import logging
+import os
 from pathlib import Path
-from moviepy.editor import VideoFileClip
+
+import numpy as np
 import requests
 import streamlink
 import tensorflow as tf
-import numpy as np
-import logging
-import os
+from moviepy.editor import VideoFileClip
+
+import config
+from src import utils
+from src.APIHandler import APIHandler
+from src.Clip import Clip
+from src.MetadataHandler import MetadataHandler
 
 
 class ClipHandler:
