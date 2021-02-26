@@ -29,7 +29,7 @@ What did we achieve?
 So why do we publish this now instead of making money with it?
 - We come to the conclusion even though optimizing the clip selection by using a rating neural network would be possible it would be quiet expensive.
 - We do not own the copyright of the clips so theoretically somebody could claim the video. To monetize this we would have needed to add some own work to the clips to use them legally. Maybe by commentating with a good text-to-speech framework.
-- The language of some clips is declared as english by twitch but is not english so for this we would have need to use a language-detection ai which is also quiet expensive.
+- The language of some clips is declared as english by twitch but is not english so for this we would have needed to use a language-detection ai which is also quiet expensive.
 
 Since this was only an experiment and we are all students without any income we ended it here and made it public as a reference and maybe somebody will continue our work.
 If you are interested in that feel free to message us via github.
