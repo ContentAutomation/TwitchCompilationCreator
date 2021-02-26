@@ -35,7 +35,8 @@ Since this was only an experiment and we are all students without any income we 
 If you are interested in that feel free to message us via github.
 
 ## Table of content
-- [Setup](setup)
+- [Results](#results)
+- [Setup](#setup)
 - [Script Explanations](#script-explanations)
     - [APIHandler](#apihandlerpy)
     - [Clip](#clippy)
@@ -79,7 +80,6 @@ highlightsforgaming@gmail.com
 
 #GoldenGorilla #Fortnite #Fails #FunnyMoments #EpicMoments #Wins #EpicWins
 #fortnitebattleroyale #season4 #twitch
-
 ```
 
 ## Setup
@@ -96,6 +96,7 @@ Make sure you have installed [Python](https://www.python.org/downloads/) 3.8 or 
 6. Insert your Twitch(CLIENT_ID, CLIENT_SECRET) and your YouTube(API_KEY) into the config.py it should look like the following
 <br>
 <span style="color:red">HINT: The example keys do not work</span>.
+
 ```python
 # For the Twitch API
 CLIENT_ID = "o42tebpdzmj5z811iycgcpmd82on24"
