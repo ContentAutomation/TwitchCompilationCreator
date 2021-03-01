@@ -19,8 +19,8 @@ class APIHandler:
             return resp.json()["pageInfo"]["totalResults"]
         else:
             logging.warning(f"Status Code: {resp.status_code}, {resp.json()}")
-            logging.warning(f"Check if you inserted a correct PlayListID in your metadata_config -> default return is 1")
-            return 1
+            logging.warning(f"Check if you inserted a correct PlayListID in your metadata_config -> default return is 0")
+            return 0
 
     @staticmethod
     def get_new_twitch_token() -> str:
