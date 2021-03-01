@@ -3,3 +3,4 @@ __pycache__/
 token
 TwitchClips/
 config.py
+.DS_Store
