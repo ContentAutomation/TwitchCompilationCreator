@@ -5,7 +5,7 @@ description = ""
 authors = ["Luca Schilling <lucaschilling96@web.de>"]
 
 [tool.poetry.dependencies]
-python = "^3.8.5"
+python = "^3.8"
 requests = "^2.25.1"
 streamlink = "^2.0.0"
 tensorflow = "^2.4.1"
