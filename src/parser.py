@@ -8,7 +8,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--game",
         type=str,
         default="fortnite",
-        help="declares for which game the compilation should be created it uses fortnite as default",
+        help="Declares for which game the compilation should be created. It uses fortnite as default",
         required=False,
     )
     parser.add_argument(
@@ -16,7 +16,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--asset_path",
         type=str,
         default="assets",
-        help="assets path if not declared it uses assets as default",
+        help="Path to the assets folder. If not declared it uses './assets' as default",
         required=False,
     )
     parser.add_argument(
@@ -24,7 +24,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--number_of_clips",
         type=int,
         default=None,
-        help="how many clips should be used but its better to use min_length instead",
+        help="How many clips should be used. For most use cases -ml will fit better since the length of clips can be between 1-60 seconds so a -noc 5 compilation could be 5 or 300 seconds long",
         required=False,
     )
     parser.add_argument(
@@ -41,7 +41,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--language",
         type=str,
         default="en",
-        help="language of the clips. Default is en",
+        help="Language of the clips. Default is en",
         required=False,
     )
     parser.add_argument(
@@ -49,7 +49,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--min_length",
         type=int,
         default=360,
-        help="length of the compilation. Default is 360 which are 6 minutes",
+        help="Length of the compilation in seconds. Default is 360 (6 minutes)",
         required=False,
     )
     parser.add_argument(
@@ -57,7 +57,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--max_creator_clips",
         type=int,
         default=2,
-        help="amount of clips used from a single creator. Default is 2",
+        help="Number of clips used from a single creator. Default is 2",
         required=False,
     )
     parser.add_argument(
@@ -65,7 +65,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--min_clip_duration",
         type=int,
         default=10,
-        help="miminal amount of seconds a clip should have. Default is 10",
+        help="Minimal clip length. Default is 10",
         required=False,
     )
     parser.add_argument(
@@ -73,7 +73,7 @@ def get_arg_parser() -> argparse.ArgumentParser:
         "--output_path",
         type=str,
         default="TwitchClips",
-        help="output path - default is TwitchClips. This should not start with a / otherwise it will use it as absolute path",
+        help="Output path - default is './TwitchClips'. This should not start with a '/', otherwise it will use it as an absolute path",
         required=False,
     )
     return parser
