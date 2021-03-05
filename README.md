@@ -130,10 +130,9 @@ It will do the following:
 ### MetaDataHandler.py
 This class will handle/create all metadata that is needed for a YouTube upload.
 It will do the following:
-- handle the loading and saving of the metadata
-- maintain the metadata -> load the metadata once per runtime and maintain it for following access
+- handle the loading, saving, and storage of the metadata
 - on every first load it will refresh the metadata. If clips got deleted in the raw_clips_dir it will remove them automatically from the metadata
-- use a template to create yt title and yt description based on the metadata_config of the game and the metadata of that specific compilation
+- use a template to create YouTube title and description based on the metadata_config of the game and the metadata of that specific compilation
 - create a thumbnail using a frame of one of the clips, a random emoji, the number of the playlists_items, a basic half transparent overlay, and the game logo
 
 ### ClipCompilationCreator.py
