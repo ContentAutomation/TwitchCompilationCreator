@@ -2,7 +2,7 @@
 name = "twitch-clip-compilation-creator"
 version = "0.1.0"
 description = ""
-authors = ["Luca Schilling <lucaschilling96@web.de>"]
+authors = ["Christian Coenen, Moritz Mundhenke, Luca Schilling"]
 
 [tool.poetry.dependencies]
 python = "^3.8.5"
