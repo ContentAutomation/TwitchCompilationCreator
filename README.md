@@ -39,11 +39,11 @@ If you are encountering any problems when running the code, feel free to open an
 - [Results](#results)
 - [Setup](#setup)
 - [Script Explanations](#script-explanations)
-    - [APIHandler](#apihandlerpy)
-    - [Clip](#clippy)
-    - [ClipHandler](#cliphandlerpy)
-    - [MetadataHandler](#metadatahandlerpy)
-    - [ClipCompilationCreator](#clipcompilationcreatorpy)
+    - [apis.py](#apispy)
+    - [clip.py](#clippy)
+    - [clip_handler.py](#clip_handlerpy)
+    - [compilation.py](#compilationpy)
+    - [metadata.py](#metadatapy)
     - [parser.py](#parserpy)
     - [utils.py](#utilspy)
 - [Run Parameters](#run-parameters)
@@ -113,13 +113,13 @@ API_KEY = "h5UYdzJHeZNWLTgGteh0J68k7icp9jp9vPJlbzF"
 
 ## Script Explanations
 
-### APIHandler.py
+### apis.py
 This class contains static methods to handle all API request for the Twitch and YouTube API.
 
-### Clip.py
+### clip.py
 This dataclass is used to convert json data from the Twitch API to Clip objects. This makes the data easier accessible within the python code.
 
-### ClipHandler.py
+### clip_handler.py
 This class determines which Twitch clips the compilation will be made of and process them.
 It will do the following:
 - call the Twitch API to get the clip metadata
@@ -127,15 +127,7 @@ It will do the following:
 - process 100 clip metadata at a time and fetch more metadata if necessary
 - download the clips one-by-one
 
-### MetaDataHandler.py
-This class will handle/create all metadata that is needed for a YouTube upload.
-It will do the following:
-- handle the loading, saving, and storage of the metadata
-- on every first load it will refresh the metadata. If clips got deleted in the raw_clips_dir it will remove them automatically from the metadata
-- use a template to create YouTube title and description based on the metadata_config of the game and the metadata of that specific compilation
-- create a thumbnail using a frame of one of the clips, a random emoji, the number of the playlists_items, a basic half transparent overlay, and the game logo
-
-### ClipCompilationCreator.py
+### compilation.py
 This class will use the clips from the ClipHandler to create a compilation of all clips with a logo and the name of the clip creator as overlay.
 It will do the following:
 - load all clips based on the metadata file
@@ -143,6 +135,14 @@ It will do the following:
 - composite all clips with their text and the logo
 - compress the audio of the compilation so the sound is equaly high for the whole compilation
 - render the finished compilation
+
+### metadata.py
+This class will handle/create all metadata that is needed for a YouTube upload.
+It will do the following:
+- handle the loading, saving, and storage of the metadata
+- on every first load it will refresh the metadata. If clips got deleted in the raw_clips_dir it will remove them automatically from the metadata
+- use a template to create YouTube title and description based on the metadata_config of the game and the metadata of that specific compilation
+- create a thumbnail using a frame of one of the clips, a random emoji, the number of the playlists_items, a basic half transparent overlay, and the game logo
 
 ### parser.py
 This script is only for the ArgumentParser that will be used in the main.py.
