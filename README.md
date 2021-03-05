@@ -5,6 +5,14 @@
     <a href="http://choosealicense.com/licenses/mit/"><img src="https://img.shields.io/badge/license-MIT-3C93B4.svg?style=flat" alt="MIT License"></a>
     <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
     <br />
+    <a href="https://www.youtube.com/channel/UCqq27nknJ3fe5IvrAbfuEwQ"><img src="https://img.shields.io/badge/YouTube-FF0000.svg?style=flat&logo=youtube" alt="Platform: YouTube"></a>
+    <a href="https://www.twitch.tv/"><img src="https://img.shields.io/badge/Twitch-9146FF.svg?style=flat&logo=twitch&logoColor=white" alt="Platform: YouTube"></a>
+    <a href="https://github.com/tensorflow/tensorflow"><img src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=tensorflow&logoColor=white" alt="Code style: black"></a>
+    <br />
+    <a href="https://github.com/pallets/jinja"><img src="https://img.shields.io/badge/templating%20language-jinja2-12A5B8.svg" alt="Code style: black"></a>
+    <a href="https://github.com/pallets/jinja"><img src="https://img.shields.io/badge/stream%20handling-streamlink-8709B8.svg" alt="Code style: black"></a>
+    <a href="https://github.com/Zulko/moviepy"><img src="https://img.shields.io/badge/video%20editing-MoviePy-87B812" alt="Code style: black"></a>
+    <br />
     <br />
     <i>A fully automated system that transforms Twitch clips into gaming compilations</i>
     <br />
