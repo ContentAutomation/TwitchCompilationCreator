@@ -21,8 +21,8 @@ This is our approach of automatically creating compilations of twitch clips (foc
 We are very interested in YouTube, Twitch and Programming so we started this as an experiment, now a few months later we have to say it worked!
 
 **What did we achieve?**
-- We automatically uploaded over 100 videos to YouTube without any human interaction
-- One video got quite some traction by getting 2155 views and 48 likes at that point we had 0 Subscribers and it was the 8th video of the channel
+- We automatically uploaded over 100 videos to [our YouTube channel](https://www.youtube.com/channel/UCqq27nknJ3fe5IvrAbfuEwQ) without any human interaction
+- [One video](https://www.youtube.com/watch?v=-YCSg11leck) got quite some traction by getting 2155 views and 48 likes at that point we had 0 Subscribers and it was the 8th video of the channel
 - All our uploads combined got over 10k views
 - We didn't receive a single comment indicating the use of bots
 
