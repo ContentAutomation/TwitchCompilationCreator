@@ -34,7 +34,11 @@ class ClipHandler:
 
         model_file_path = Path(os.path.join(asset_path, utils.get_valid_game_name(self.game), "game_detection.h5"))
         if model_file_path.is_file():
-            self.model = tf.keras.models.load_model(model_file_path)
+            try:
+                self.model = tf.keras.models.load_model(model_file_path)
+            except OSError:
+                logging.warning("Model was not pulled by git lfs -> will continue without a model")
+                self.model = None
         else:
             self.model = None
 
