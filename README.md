@@ -18,9 +18,9 @@
     <br />
 <br />
     <i><b>Authors</b>:
-        <a href="https://github.com/ChristianCoenen">Christian Coenen</a>,
-        <a href="https://github.com/DeadlySurprise">Moritz Mundhenke</a>,
-        <a href="https://github.com/lucaSchilling">Luca Schilling </a>
+        <a href="https://github.com/ChristianCoenen">Christian C.</a>,
+        <a href="https://github.com/DeadlySurprise">Moritz M.</a>,
+        <a href="https://github.com/lucaSchilling">Luca S.</a>
     </i>
 </p>
 <hr />
