@@ -5,12 +5,12 @@ description = ""
 authors = ["Luca Schilling <lucaschilling96@web.de>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-requests = "^2.25.1"
-streamlink = "^2.0.0"
-tensorflow = "^2.4.1"
-moviepy = "^1.0.3"
-Jinja2 = "^2.11.3"
+python = "~=3.8"
+requests = "~=2.25.0"
+streamlink = "~=2.1.0"
+tensorflow = "~=2.4.0"
+moviepy = "~=1.0.0"
+Jinja2 = "~=2.11.0"
 
 [tool.poetry.dev-dependencies]
 
