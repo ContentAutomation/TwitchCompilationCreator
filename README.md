@@ -6,7 +6,7 @@
     <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
     <br />
     <a href="https://www.youtube.com/channel/UCqq27nknJ3fe5IvrAbfuEwQ"><img src="https://img.shields.io/badge/YouTube-FF0000.svg?style=flat&logo=youtube" alt="Platform: YouTube"></a>
-    <a href="https://www.twitch.tv/"><img src="https://img.shields.io/badge/Twitch-9146FF.svg?style=flat&logo=twitch&logoColor=white" alt="Platform: YouTube"></a>
+    <a href="https://www.twitch.tv/"><img src="https://img.shields.io/badge/Twitch-9146FF.svg?style=flat&logo=twitch&logoColor=white" alt="Platform: Twitch"></a>
     <a href="https://github.com/tensorflow/tensorflow"><img src="https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=tensorflow&logoColor=white" alt="Tensorflow"></a>
     <br />
     <a href="https://github.com/pallets/jinja"><img src="https://img.shields.io/badge/templating%20language-jinja2-12A5B8.svg" alt="Jinja"></a>
