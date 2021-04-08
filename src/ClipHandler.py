@@ -36,8 +36,8 @@ class ClipHandler:
         if model_file_path.is_file():
             try:
                 self.model = tf.keras.models.load_model(model_file_path)
-            except OSError:
-                logging.warning("Model was not pulled by git lfs -> will continue without a model")
+            except IOError:
+                logging.warning(f"No Model found at {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
                 self.model = None
         else:
             self.model = None
