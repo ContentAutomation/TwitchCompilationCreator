@@ -37,9 +37,11 @@ class ClipHandler:
             try:
                 self.model = tf.keras.models.load_model(model_file_path)
             except IOError:
-                logging.warning(f"No Model found at {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
+                logging.warning(f"Could not load model from {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
                 self.model = None
         else:
+            logging.warning(
+                f"No Model found at {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
             self.model = None
 
     def get_clips(self, timespan: str, language: str, **kwargs):
