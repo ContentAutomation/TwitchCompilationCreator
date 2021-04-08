@@ -33,16 +33,13 @@ class ClipHandler:
         self.streamer_blocklist = utils.load_json_file("blocklist.json")["streamers"]
 
         model_file_path = Path(os.path.join(asset_path, utils.get_valid_game_name(self.game), "game_detection.h5"))
-        if model_file_path.is_file():
-            try:
-                self.model = tf.keras.models.load_model(model_file_path)
-            except IOError:
-                logging.warning(f"Could not load model from {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
-                self.model = None
-        else:
-            logging.warning(
-                f"No Model found at {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
+
+        try:
+            self.model = tf.keras.models.load_model(model_file_path)
+        except IOError:
+            logging.warning(f"Could not load model from {model_file_path}. Programm will proceed without a model -> all clips are considered ingame. You can download a test model from https://github.com/ContentAutomation/TwitchCompilationCreator/releases/latest")
             self.model = None
+    
 
     def get_clips(self, timespan: str, language: str, **kwargs):
         utils.make_dirs(self.game, self.output_path)
