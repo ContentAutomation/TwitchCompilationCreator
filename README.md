@@ -22,9 +22,16 @@
         <a href="https://github.com/DeadlySurprise">Moritz M.</a>,
         <a href="https://github.com/lucaSchilling">Luca S.</a>
     </i>
+<br />
+    <i><b>Related Projects</b>:
+        <a href="https://github.com/ContentAutomation/NeuralNetworks">Neural Networks</a>,
+        <a href="https://github.com/ContentAutomation/YouTubeUploader">YouTube Uploader</a>,
+        <a href="https://github.com/ContentAutomation/YouTubeWatcher">YouTube Watcher</a>
+    </i>
 </p>
 <hr />
 
+## About
 This is our approach of automatically creating compilations of twitch clips (focused on gaming).
 We are very interested in YouTube, Twitch and Programming so we started this as an experiment, now a few months later we have to say it worked!
 
@@ -43,18 +50,6 @@ We are very interested in YouTube, Twitch and Programming so we started this as 
 It was only an experiment without the direct goal of making money with it. Additionally, we think it is more valuable for us as a reference.
 If you are encountering any problems when running the code, feel free to open an [Issue](https://github.com/ContentAutomation/TwitchCompilationCreator/issues) or a [Pull Request](https://github.com/ContentAutomation/TwitchCompilationCreator/pulls) with a possible fix.
 
-## Table of content
-- [Results](#results)
-- [Setup](#setup)
-- [Script Explanations](#script-explanations)
-    - [apis.py](#apispy)
-    - [clip.py](#clippy)
-    - [clip_handler.py](#clip_handlerpy)
-    - [compilation.py](#compilationpy)
-    - [metadata.py](#metadatapy)
-    - [parser.py](#parserpy)
-    - [utils.py](#utilspy)
-- [Run Parameters](#run-parameters)
 
 ## Results
 Example Video Screenshot            |  Example Thumbnail
