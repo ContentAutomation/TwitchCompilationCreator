@@ -83,7 +83,7 @@ class ClipHandler:
                 if self.retries > 0:
                     return self.get_game_clips(utils.get_headers(), timespan, language, filter_information)
                 else:
-                    raise ConnectionRefusedError("Authentication problem occurred."
+                    raise ConnectionRefusedError("Authentication problem occurred. "
                                                  "Couldn't fetch clip data after three tries")
             else:
                 logging.warning(f"Status Code: {resp.status_code}, {resp.json()}")
