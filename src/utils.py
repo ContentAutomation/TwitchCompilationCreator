@@ -9,6 +9,8 @@ from typing import Union
 import config
 from src.APIHandler import APIHandler
 
+FOLDER_TIMESTAMP = datetime.now(timezone.utc).astimezone().strftime("%Y_%m_%d_%H_%M_%S")
+
 
 def get_date_string(date: datetime) -> str:
     return date.strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -41,8 +43,7 @@ def get_valid_file_name(name: str) -> str:
 
 
 def get_game_path(folder: str, game: str, output_path: str) -> str:
-    date = datetime.now(timezone.utc).astimezone()
-    return os.path.join(output_path, "media", get_valid_game_name(game), date.strftime("%Y_%m_%d_%H_%M_%S"), folder)
+    return os.path.join(output_path, "media", get_valid_game_name(game), FOLDER_TIMESTAMP, folder)
 
 
 # Returns the path to the folder of the previous compilation of that game
