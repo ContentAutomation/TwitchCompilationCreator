@@ -10,16 +10,23 @@ class APIHandler:
     @staticmethod
     def get_yt_playlist_size(playlist_id: str) -> int:
         logging.info("Getting amount of playlist items")
+        try:
+            config.YT_API_KEY
+        except AttributeError:
+            logging.warning(
+                f"No YT_API_KEY provided in config.py -> return playlist_size of 0")
+            return 0
         url = (
             f"https://www.googleapis.com/youtube/v3/playlistItems"
         )
-        payload = {"part": "id", "playlistId": playlist_id, "key": config.API_KEY}
+        payload = {"part": "id", "playlistId": playlist_id, "key": config.YT_API_KEY}
         resp = requests.get(url, params=payload, headers={})
         if resp.status_code == 200:
             return resp.json()["pageInfo"]["totalResults"]
         else:
             logging.warning(f"Status Code: {resp.status_code}, {resp.json()}")
-            logging.warning(f"Check if you inserted a correct PlayListID in your metadata_config -> default return is 0")
+            logging.warning(
+                f"Check if you inserted a correct PlayListID in your metadata_config -> return playlist_size of 0")
             return 0
 
     @staticmethod
