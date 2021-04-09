@@ -97,9 +97,9 @@ Make sure you have installed [Python](https://www.python.org/downloads/) 3.8 or 
 1. Clone/Download this repository
 2. Navigate to the root of the repository
 3. Run ```poetry install``` to create a virtual environment with Poetry
-4. Follow the [twitch api docs](https://dev.twitch.tv/docs/authentication#registration) until you get your own CLIENT_ID and CLIENT_SECRET
-5. Follow the [youtube data api docs](https://developers.google.com/youtube/v3/getting-started) until you receive an API key
-6. Insert your Twitch(CLIENT_ID, CLIENT_SECRET) and your YouTube(API_KEY) into the config.py it should look like the following
+4. Follow the [Twitch Api Docs](https://dev.twitch.tv/docs/authentication#registration) until you get your own CLIENT_ID and CLIENT_SECRET
+5. Optional: Follow the [YouTube Data API Docs](https://developers.google.com/youtube/v3/getting-started) until you receive an API key
+6. Insert your Twitch(CLIENT_ID, CLIENT_SECRET) and optionally your YouTube(YT_API_KEY) into the config.py. It should look like the following
 <br>
 <span style="color:red">HINT: The example keys do not work</span>.
 
@@ -108,8 +108,12 @@ Make sure you have installed [Python](https://www.python.org/downloads/) 3.8 or 
 CLIENT_ID = "o42tebpdzmj5z811iycgcpmd82on24"
 CLIENT_SECRET = "owdgx64t1dodleiuo49e5rg7rvk5iq"
 
-# For the YoutTube API
-API_KEY = "h5UYdzJHeZNWLTgGteh0J68k7icp9jp9vPJlbzF"
+DIRECTORIES = dict(raw_clips_dir="rawClips", compilation_dir="compilation", descriptions_dir="descriptions")
+
+# For the YouTube API
+# Optional: Only required if you want continuous numbering (e.g. Example Video Title #1, #2, ..., #N) for your videos
+# Note: The number (#N) is determined by the number of items in a given YouTube playlist (declared in metadata_config)
+YT_API_KEY = "h5UYdzJHeZNWLTgGteh0J68k7icp9jp9vPJlbzF"
 ```
 7. Run ```poetry run python main.py``` to run the program. Alternatively you can run ```poetry shell``` followed by ```python main.py```
 8. Enjoy :)
