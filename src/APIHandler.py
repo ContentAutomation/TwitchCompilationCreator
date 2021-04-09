@@ -49,6 +49,9 @@ class APIHandler:
         payload = {"name": name}
         resp = requests.get(url, params=payload, headers=utils.get_headers())
         if resp.status_code == 200:
-            return resp.json()["data"][0]["id"]
+            try:
+                return resp.json()["data"][0]["id"]
+            except (IndexError, KeyError):
+                raise NameError("Game not found. Please provide a valid game name.")
         else:
             logging.warning(f"Status Code: {resp.status_code}, {resp.json()}")
