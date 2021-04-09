@@ -42,7 +42,7 @@ def get_valid_file_name(name: str) -> str:
 
 def get_game_path(folder: str, game: str, output_path: str) -> str:
     date = datetime.now(timezone.utc).astimezone()
-    return os.path.join(output_path, "media", get_valid_game_name(game), date.strftime("%Y_%m_%d"), folder)
+    return os.path.join(output_path, "media", get_valid_game_name(game), date.strftime("%Y_%m_%d_%H_%M_%S"), folder)
 
 
 # Returns the path to the folder of the previous compilation of that game
