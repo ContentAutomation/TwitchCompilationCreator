@@ -64,7 +64,6 @@ class ClipHandler:
             return True
 
     def get_game_clips(self, headers: dict, timespan: str, language: str, filter_information: dict):
-        self.retries = 3
         creator_counts = {}
         times = utils.get_start_end_time(timespan)
 
@@ -77,13 +76,15 @@ class ClipHandler:
             if resp.status_code == 200:
                 logging.info("Status Code: 200 -> handling response data now")
                 self.handle_response_data(resp.json(), language, creator_counts, filter_information)
+                self.retries = 3
             elif resp.status_code == 401:
                 self.retries -= 1
                 logging.warning(f"Status Code: 401 -> retrying with new token for {self.retries} more times")
                 if self.retries > 0:
                     return self.get_game_clips(utils.get_headers(), timespan, language, filter_information)
                 else:
-                    logging.error("Authentatication Problem occured couldn't fetch clip data after three tries")
+                    raise ConnectionRefusedError("Authentication problem occurred."
+                                                 "Couldn't fetch clip data after three tries")
             else:
                 logging.warning(f"Status Code: {resp.status_code}, {resp.json()}")
 
