@@ -94,6 +94,10 @@ Check out [this link](https://python-poetry.org/docs/) to install Poetry on your
 
 Make sure you have installed [Python](https://www.python.org/downloads/) 3.8! Otherwise Step 3 will let you know that you have no compatible Python version installed.
 
+Additionally, this project requires [ffmpeg](https://ffmpeg.org/download.html) and [imagemagick](https://imagemagick.org/script/download.php#windows).
+
+*Note: Make sure that imagemagick is not restricted by the path access policy. Make sure the line `<policy domain="path" rights="none" pattern="@*"/>` is NOT present in the imagemagick policy config (`/etc/ImageMagick-6/policy.xml` on Debian/Ubuntu, [Windows Guide](https://github.com/Zulko/moviepy/issues/378)). Comment out this line if it is found in the file.*
+
 1. Clone/Download this repository
 2. Navigate to the root of the repository
 3. Run ```poetry install``` to create a virtual environment with Poetry
