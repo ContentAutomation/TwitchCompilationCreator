@@ -88,7 +88,7 @@ highlightsforgaming@gmail.com
 #fortnitebattleroyale #season4 #twitch
 ```
 
-## Setup
+## Requirements
 This project requires [Poetry](https://python-poetry.org/) to install the required dependencies.
 Check out [this link](https://python-poetry.org/docs/) to install Poetry on your operating system.
 
@@ -96,8 +96,23 @@ Make sure you have installed [Python](https://www.python.org/downloads/) 3.8! Ot
 
 Additionally, this project requires [ffmpeg](https://ffmpeg.org/download.html) and [imagemagick](https://imagemagick.org/script/download.php#windows).
 
-*Note: Make sure that imagemagick is not restricted by the path access policy. Make sure the line `<policy domain="path" rights="none" pattern="@*"/>` is NOT present in the imagemagick policy config (`/etc/ImageMagick-6/policy.xml` on Debian/Ubuntu, [Windows Guide](https://github.com/Zulko/moviepy/issues/378)). Comment out this line if it is found in the file.*
+There are a few additional steps depending on the operating system that are listed below:
 
+**Windows**
+- Poetry
+    - installing might throw errors which can be resolved by following 
+    [this](python-poetry/poetry#2681) solution
+    - you should use pip version ≥ 20.2.3 to avoid additional problems
+- ffmpeg
+    - has to be added to the path so it can be accessed directly with the streamlink command
+- imagemagick
+    - you have to change the the config_default as described [here](https://github.com/Zulko/moviepy/issues/378)
+
+**Linux**
+- imagemagick
+    - make sure the line `<policy domain="path" rights="none" pattern="@*"/>` is NOT present in the imagemagick policy config (`/etc/ImageMagick-6/policy.xml` on Debian/Ubuntu). Comment out this line if it is found in the file to ensure that imagemagick is not restricted by the path access policy.*
+
+## Setup
 1. Clone/Download this repository
 2. Navigate to the root of the repository
 3. Run ```poetry install``` to create a virtual environment with Poetry
