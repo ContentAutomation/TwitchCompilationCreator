@@ -101,7 +101,7 @@ There are a few additional steps depending on the operating system that are list
 **Windows**
 - Poetry
     - installing might throw errors which can be resolved by following 
-    [this](python-poetry/poetry#2681) solution
+    [this](https://github.com/python-poetry/poetry/issues/2681) solution
     - you should use pip version ≥ 20.2.3 to avoid additional problems
 - ffmpeg
     - has to be added to the path so it can be accessed directly with the streamlink command
