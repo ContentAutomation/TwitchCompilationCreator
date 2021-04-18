@@ -139,7 +139,7 @@ YT_API_KEY = "h5UYdzJHeZNWLTgGteh0J68k7icp9jp9vPJlbzF"
 
 ## Script Explanations
 
-### apis.py
+### APIHandler.py
 This class contains static methods to handle all API request for the Twitch and YouTube API.
 
 ### clip.py
