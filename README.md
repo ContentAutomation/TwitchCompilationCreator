@@ -142,10 +142,10 @@ YT_API_KEY = "h5UYdzJHeZNWLTgGteh0J68k7icp9jp9vPJlbzF"
 ### APIHandler.py
 This class contains static methods to handle all API request for the Twitch and YouTube API.
 
-### clip.py
+### Clip.py
 This dataclass is used to convert json data from the Twitch API to Clip objects. This makes the data easier accessible within the python code.
 
-### clip_handler.py
+### ClipHandler.py
 This class determines which Twitch clips the compilation will be made of and process them.
 It will do the following:
 - call the Twitch API to get the clip metadata
@@ -153,7 +153,7 @@ It will do the following:
 - process 100 clip metadata at a time and fetch more metadata if necessary
 - download the clips one-by-one
 
-### compilation.py
+### ClipCompilationCreator.py
 This class will use the clips from the ClipHandler to create a compilation of all clips with a logo and the name of the clip creator as overlay.
 It will do the following:
 - load all clips based on the metadata file
@@ -162,7 +162,7 @@ It will do the following:
 - compress the audio of the compilation so the sound is equaly high for the whole compilation
 - render the finished compilation
 
-### metadata.py
+### MetadataHandler.py
 This class will handle/create all metadata that is needed for a YouTube upload.
 It will do the following:
 - handle the loading, saving, and storage of the metadata
