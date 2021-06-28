@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "neuralnetworks"
+name = "twitchcompilationcreator"
 version = "1.0"
 description = "A fully automated system that transforms Twitch clips into gaming compilations"
 authors = ["Christian C., Moritz M., Luca S."]
