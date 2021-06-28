@@ -2,7 +2,7 @@
 CLIENT_ID = "INSERT CLIENT_ID HERE"
 CLIENT_SECRET = "INSERT CLIENT_SECRET HERE"
 
-DIRECTORIES = dict(raw_clips_dir="rawClips", compilation_dir="compilation", descriptions_dir="descriptions")
+DIRECTORIES = dict(raw_clips_dir="rawClips", compilation_dir="compilation")
 
 # For the YouTube API
 # Optional: Only required if you want continuous numbering (e.g. Example Video Title #1, #2, ..., #N) for your videos

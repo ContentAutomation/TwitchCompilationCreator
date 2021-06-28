@@ -127,7 +127,7 @@ There are a few additional steps depending on the operating system that are list
 CLIENT_ID = "o42tebpdzmj5z811iycgcpmd82on24"
 CLIENT_SECRET = "owdgx64t1dodleiuo49e5rg7rvk5iq"
 
-DIRECTORIES = dict(raw_clips_dir="rawClips", compilation_dir="compilation", descriptions_dir="descriptions")
+DIRECTORIES = dict(raw_clips_dir="rawClips", compilation_dir="compilation")
 
 # For the YouTube API
 # Optional: Only required if you want continuous numbering (e.g. Example Video Title #1, #2, ..., #N) for your videos
