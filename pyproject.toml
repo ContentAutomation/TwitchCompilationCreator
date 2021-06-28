@@ -6,7 +6,7 @@ authors = ["Christian C., Moritz M., Luca S."]
 [tool.poetry.dependencies]
 python = "~=3.8"
 requests = "~=2.25.0"
-streamlink = "~=2.1.0"
+streamlink = "^=2.2.0"
 tensorflow = "~=2.4.0"
 moviepy = "~=1.0.0"
 Jinja2 = "~=2.11.0"
