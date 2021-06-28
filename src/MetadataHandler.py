@@ -19,7 +19,6 @@ class MetadataHandler:
         self.output_path = output_path
         self.game = game
         self.asset_path = asset_path
-        self.descriptions_dir = utils.get_game_path(config.DIRECTORIES["descriptions_dir"], self.game, output_path)
         self.compilation_dir = utils.get_game_path(config.DIRECTORIES["compilation_dir"], self.game, output_path)
         self.raw_clips_dir = utils.get_game_path(config.DIRECTORIES["raw_clips_dir"], self.game, output_path)
         self.metadata_config = None
@@ -71,11 +70,6 @@ class MetadataHandler:
 
     def get_youtube_description(self) -> str:
         return utils.load_txt_file(os.path.join(self.compilation_dir, "description_yt.txt"))
-
-    def get_instagram_description(self, clip: Clip) -> str:
-        return utils.load_txt_file(
-            os.path.join(self.descriptions_dir, utils.get_valid_file_name(f"{str(clip.clip_id)}{clip.id}.txt"))
-        )
 
     def get_youtube_title(self) -> str:
         return utils.load_txt_file(os.path.join(self.compilation_dir, "title_yt.txt"))
