@@ -16,7 +16,10 @@
     <br />
     <i>A fully automated system that transforms Twitch clips into gaming compilations</i>
     <br />
-<br />
+    <br />
+    <a href="https://youtu.be/Pk--a1i194c">Video explanation (YouTube)</a>
+    <br />
+    <br />
     <i><b>Authors</b>:
         <a href="https://github.com/ChristianCoenen">Christian C.</a>,
         <a href="https://github.com/DeadlySurprise">Moritz M.</a>,
