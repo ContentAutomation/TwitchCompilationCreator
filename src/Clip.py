@@ -19,3 +19,4 @@ class Clip:
     thumbnail_url: str
     duration: float = 0.0
     clip_id: int = 0
+    vod_offset: int = 0
