@@ -95,7 +95,7 @@ highlightsforgaming@gmail.com
 This project requires [Poetry](https://python-poetry.org/) to install the required dependencies.
 Check out [this link](https://python-poetry.org/docs/) to install Poetry on your operating system.
 
-Make sure you have installed [Python](https://www.python.org/downloads/) 3.8! Otherwise Step 3 will let you know that you have no compatible Python version installed.
+Make sure you have installed [Python](https://www.python.org/downloads/) 3.10! Otherwise Step 3 will let you know that you have no compatible Python version installed.
 
 Additionally, this project requires [ffmpeg](https://ffmpeg.org/download.html) and [imagemagick](https://imagemagick.org/script/download.php#windows).
 
@@ -107,9 +107,9 @@ There are a few additional steps depending on the operating system that are list
     [this](https://github.com/python-poetry/poetry/issues/2681) solution
     - you should use pip version ≥ 20.2.3 to avoid additional problems
 - ffmpeg
-    - has to be added to the path so it can be accessed directly with the streamlink command
+    - has to be added to the path, so it can be accessed directly with the streamlink command
 - imagemagick
-    - you have to change the the config_default as described [here](https://github.com/Zulko/moviepy/issues/378)
+    - you have to change the config_default as described [here](https://github.com/Zulko/moviepy/issues/378)
 
 **Linux**
 - imagemagick
@@ -190,7 +190,7 @@ It contains functions performing the following tasks:
 - get the full path of the previous compilation of a given game
 - create our directory structure 
 - delete the whole directory structure
-- saving and loading txt aswell as json files
+- saving and loading txt as well as json files
 
 ## Run Parameters
 All of these parameters are optional and a default value will be used if they are not defined. 
