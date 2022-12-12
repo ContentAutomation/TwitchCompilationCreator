@@ -4,12 +4,12 @@ version = "1.0"
 description = "A fully automated system that transforms Twitch clips into gaming compilations"
 authors = ["Christian C., Moritz M., Luca S."]
 [tool.poetry.dependencies]
-python = "~3.8"
-requests = "~2.25.0"
-streamlink = "^2.2.0"
-tensorflow = "~2.4.0"
+python = "~3.10"
+requests = "~2.28.0"
+streamlink = "^5.1.2"
+tensorflow = "~2.11.0"
 moviepy = "~1.0.0"
-Jinja2 = "~2.11.0"
+Jinja2 = "~3.1.2"
 
 [tool.poetry.dev-dependencies]
 
